@@ -51,7 +51,7 @@ let drawMatrix = (cells, x, y) => {
     for (let i = 0; i < x; i++) {
         let j = i;
         for (let i = 0; i < y; i++) {
-            ctx.fillStyle = `rgba(0, 255, 0, ${getRandomInt(20, 60)/100})`;
+            ctx.fillStyle = `rgba(0, 255, 0, ${getRandomInt(0, 100)/100})`;
             ctx.fillText(cells[getRandomInt(0, cells.length)], ((canvas.width / x) * j) + (canvas.width / x) / 4, ((canvas.height / y) * i) + (canvas.height / y) / 1.5)
         }
     }
